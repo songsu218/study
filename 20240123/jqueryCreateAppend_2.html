@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Create</title>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            for(var i = 0; i <10; i++) {
+                var $dynamic = $('<h1>Create Document Object + ' + i + '</h1>').css({
+                    backgroundColor: 'black',
+                    color: 'red'
+                });
+
+                $('body').append($dynamic);
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

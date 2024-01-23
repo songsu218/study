@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Animation</title>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                '/Users/songsu/Documents/source/chapter_12/0.png',
+                '/Users/songsu/Documents/source/chapter_12/1.png',
+                '/Users/songsu/Documents/source/chapter_12/2.png',
+                '/Users/songsu/Documents/source/chapter_12/3.png',
+                '/Users/songsu/Documents/source/chapter_12/4.png',
+                '/Users/songsu/Documents/source/chapter_12/5.png',
+                '/Users/songsu/Documents/source/chapter_12/6.png',
+                '/Users/songsu/Documents/source/chapter_12/7.png',
+                '/Users/songsu/Documents/source/chapter_12/8.png',
+                '/Users/songsu/Documents/source/chapter_12/9.png',
+                '/Users/songsu/Documents/source/chapter_12/10.png',
+                '/Users/songsu/Documents/source/chapter_12/11.png',
+                '/Users/songsu/Documents/source/chapter_12/12.png',
+                '/Users/songsu/Documents/source/chapter_12/13.png',
+                '/Users/songsu/Documents/source/chapter_12/14.png',
+            ];
+
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count +1;
+            }, 1000 / 20);
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>
