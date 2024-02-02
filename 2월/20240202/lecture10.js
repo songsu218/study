@@ -31,6 +31,7 @@ console.log(print("Hello Function"));
 //print function in
 //Hello Function
 //print function out
+//undefined
 
 console.log(sum(1,2));
 //3
